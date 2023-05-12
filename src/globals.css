@@ -15,6 +15,9 @@ input:focus {
 }
 
 :root {
+	--main-color-0: #000000;
+	--main-color-1: #FF5757;
+	--main-color-2: #FF7645;
 	--primary-scale-900: rgba(9, 46, 80, 1);
 	--primary-scale-600: rgba(16, 99, 175, 1);
 	--primary-scale-800: rgba(21, 65, 106, 1);

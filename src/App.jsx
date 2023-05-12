@@ -7,11 +7,8 @@ function App() {
 	return (
 		<>
 		<Routes>
-			{/* <Switch> */}
-				<Route path="/">
-					<Home />
-				</Route>
-			{/* </Switch> */}
+				<Route path="/" element={<Home/>}/>
+
 		</Routes>
 		</>
 	);
