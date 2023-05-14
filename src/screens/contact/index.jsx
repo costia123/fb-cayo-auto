@@ -1,13 +1,13 @@
 import React, {useEffect} from "react";
 import Header from "components/concrete/header";
 
-function Home(props) {
+function Contact(props) {
 	return (
 		<>
 			<Header />
-			home
+            contact
 		</>
 	);
 }
 
-export default Home;
+export default Contact;

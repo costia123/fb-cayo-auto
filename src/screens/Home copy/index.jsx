@@ -5,7 +5,6 @@ function Home(props) {
 	return (
 		<>
 			<Header />
-			home
 		</>
 	);
 }
