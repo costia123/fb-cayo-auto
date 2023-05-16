@@ -1,11 +1,18 @@
-import React, {useEffect} from "react";
+import React from "react";
+
+
+
+
 import Header from "components/concrete/header";
+import Catbox from "components/concrete/Catbox";
+
 
 function Catalogue(props) {
+
 	return (
 		<>
 			<Header />
-            catalogue
+			<Catbox />
 		</>
 	);
 }
