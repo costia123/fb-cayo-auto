@@ -6,14 +6,15 @@ import { getStrapiPage } from "redux/strapi/action";
 //Styles
 import styles from './styles.module.css';
 
-//Images
+//Comp
+import Box from "components/abstract/box";
 
 function Catbox (){
 	const strapi = useSelector(state => state.strapi)
 	const dispatch = useDispatch()
 	useEffect(() => {
         if (!strapi.strapiPage) {
-            dispatch(getStrapiPage("categories"));
+            dispatch(getStrapiPage("categories?populate=*"));
         }
     }, [strapi]);
 
@@ -22,6 +23,23 @@ function Catbox (){
     return(
         <>
             <div className={styles.MainBox}>
+                <div className={styles.catlist}>
+
+                {strapi.strapiPage != null ? strapi.strapiPage.data.data.map((item, index) => {
+                    return(
+                        
+                        <Box 
+                        Title={item.attributes.Titre}
+                        img={item.attributes.icon.data.attributes.url}
+                        />
+                        )
+                        
+                    })
+                    
+                    :
+                    null 
+                }
+                </div>
             </div>
         </>
     )
