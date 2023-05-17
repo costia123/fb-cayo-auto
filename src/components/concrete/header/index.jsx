@@ -17,6 +17,7 @@ function Header (){
             <div className={styles.MainBox}>
                 <div onClick={() => {navigate("/")}} className={styles.logoA_Box}>
                     <img src={logo} className={styles.logoA} />
+                    <p className={styles.HeaderTitle}>Cayo Automobile</p>
                 </div>
                 <div className={styles.Nav}>
                     <button className={styles.NavBtn} onClick={() => {navigate("/catalogue")}}>
@@ -26,6 +27,9 @@ function Header (){
                         Contact
                     </button>
                 </div>
+            </div>
+            <div className={styles.linearline}>
+
             </div>
         </>
     )

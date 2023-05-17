@@ -1,0 +1,11 @@
+.MainBox{
+    background-color:#353839 ;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
