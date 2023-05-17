@@ -17,7 +17,7 @@ const clefs = {
 const GreyCard = {
   Title: "Carte grise",
   icon: "card",
-  text: "Notre entreprise propose la creation de carte grise à XXX$ unité pensez a vous munir d'une photo du véhicules",
+  text: "Notre entreprise propose la creation de carte grise à 200$ unité pensez a vous munir d'une photo du véhicules",
 };
 
 function Services(props) {
