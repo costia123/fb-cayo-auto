@@ -31,11 +31,13 @@ function Services(props) {
         text={Car.text} 
         />
         <CardSeparator />
+        <CardSeparator />
         <Card 
         Title={clefs.Title} 
         icon={clefs.icon} 
         text={clefs.text} 
         />
+        <CardSeparator />
         <CardSeparator />
         <Card
           Title={GreyCard.Title}

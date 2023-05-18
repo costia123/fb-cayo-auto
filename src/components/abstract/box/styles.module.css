@@ -1,6 +1,7 @@
 .MainBox{
-    border: white 8px solid;
-    width: 20%;
+  /*   border: white 8px solid; */
+    width: 6%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -19,14 +20,14 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-  
     width: 100%;
 
 }
 .caticon{
-    width: 150px;
+    width: 50px;
 }
 
 .catTitle{
+    font-size: 20px;    
     color: black;
 }
