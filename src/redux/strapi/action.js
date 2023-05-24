@@ -16,3 +16,29 @@ axios.get(`http://localhost:1337/api/${name}`).then((response) => {
   console.log(error)
 })
 }
+export const getStrapiCat = () => dispatch => {
+  /*     setSpinner(true) */
+  axios.get(`http://localhost:1337/api/categories?populate=*`).then((response) => {
+  /*     setSpinner(false) */
+      console.log(response)
+      dispatch({
+          type: strapi.GET_STRAPI_CAT,
+          payload: response
+      })
+  }).catch(function (error) {
+    console.log(error)
+  })
+  }
+  export const getStrapiCar = () => dispatch => {
+    /*     setSpinner(true) */
+    axios.get(`http://localhost:1337/api/cars?populate=*`).then((response) => {
+    /*     setSpinner(false) */
+        console.log(response)
+        dispatch({
+            type: strapi.GET_STRAPI_CAR,
+            payload: response
+        })
+    }).catch(function (error) {
+      console.log(error)
+    })
+    }
