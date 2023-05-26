@@ -23,7 +23,7 @@ export const getStrapiCat = () => dispatch => {
       console.log(response)
       dispatch({
           type: strapi.GET_STRAPI_CAT,
-          payload: response
+          payload: response.data.data
       })
   }).catch(function (error) {
     console.log(error)
@@ -36,7 +36,7 @@ export const getStrapiCat = () => dispatch => {
         console.log(response)
         dispatch({
             type: strapi.GET_STRAPI_CAR,
-            payload: response
+            payload: response.data.data
         })
     }).catch(function (error) {
       console.log(error)
